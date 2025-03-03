@@ -49,3 +49,8 @@
   color: rgb(180, 180, 180);
   opacity: 0.8;
 }
+
+.superInput {
+  background-color: #f8f9fa;
+  border: 2px solid #007bff;
+}
