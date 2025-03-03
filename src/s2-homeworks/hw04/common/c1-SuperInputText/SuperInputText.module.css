@@ -1,0 +1,51 @@
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* 🔹 Основной стиль для инпута */
+.input {
+  font-size: 14px;
+  padding: 8px 12px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.2s;
+  width: 250px;
+}
+
+/* 🔵 Фокусированный инпут */
+.input:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.3);
+}
+
+/* Инпут с ошибкой */
+.errorInput {
+  border-color: red;
+  background-color: #ffffff;
+}
+
+.errorInput:focus {
+  border-color: darkred;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+/* ⚠️ Текст ошибки */
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+/* ✨ Стили для плейсхолдера */
+.input::placeholder {
+  color: #ff0000;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.errorInput::placeholder {
+  color: rgb(180, 180, 180);
+  opacity: 0.8;
+}

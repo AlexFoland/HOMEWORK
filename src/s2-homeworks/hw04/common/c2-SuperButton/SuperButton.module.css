@@ -1,0 +1,71 @@
+.button {
+  width: 132px;
+  height: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+}
+
+/* 🔵 Дефолтная кнопка */
+.default {
+  background-color: #0066cc;
+  color: white;
+}
+
+.default:hover {
+  background-color: #005bb5;
+}
+
+.default:active {
+  background-color: #004a99;
+  transform: scale(1);
+}
+
+/* 🔴 Опасная (красная) кнопка */
+.red {
+  background-color: #c9172b;
+  color: white;
+}
+
+.red:hover {
+  background-color: #a31223;
+}
+
+.red:active {
+  background-color: #800e18;
+  transform: scale(1);
+}
+
+/* ⚪ Вторичная (дополнительная) кнопка */
+.secondary {
+  background-color: transparent;
+  color: #0066cc;
+  border: 2px solid #0066cc;
+}
+
+.secondary:hover {
+  background-color: #f0f8ff;
+}
+
+.secondary:active {
+  background-color: #dceeff;
+  border-color: #005bb5;
+}
+
+/* ⚫ Отключённая кнопка */
+.disabled {
+  background-color: #a0aec0;
+  color: #e2e8f0;
+  cursor: not-allowed;
+}
+
+/* ✨ Фокус для доступности */
+.button:focus {
+  outline: 2px solid #004a99;
+  box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
